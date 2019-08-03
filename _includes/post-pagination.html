@@ -1,0 +1,18 @@
+<nav class="nav  nav--paginator">
+
+    {% if paginator.previous_page %}
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="pagination  pagination--previous">&larr; Récents</a>
+    {% else %}
+      <span class="pagination  pagination--previous">&larr; Récents</span>
+    {% endif %}
+  
+    <span class="pagination  pagination--counter">Page: {{ paginator.page }} / {{ paginator.total_pages }}</span>
+  
+    {% if paginator.next_page %}
+      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="pagination  pagination--next">Anciens &rarr;</a>
+    {% else %}
+      <span class="pagination  pagination--next">Anciens &rarr;</span>
+    {% endif %}
+  
+  </nav>
+  

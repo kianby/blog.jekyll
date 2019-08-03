@@ -1,0 +1,65 @@
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://prose.github.io/starter/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'images/2019'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+        value: ""          
+      - name: "categories"
+        field:
+          element: "select"
+          label: "Category"
+          placeholder: "Choose Category"
+          options:
+            - name: "Humeur"
+              value: "Humeur"
+            - name: "Mobilité"
+              value: "Mobilité"
+            - name: "GNU/Linux"
+              value: "GNU/Linux"
+            - name: "Hébergement"
+              value: "Hébergement"   
+            - name: "Blog"
+              value: "Blog"
+            - name: "Développement"
+              value: "Développement"
+            - name: "Matériel"
+              value: "Matériel"                
+            - name: "Android"
+              value: "Android"
+            - name: "Virtualisation"
+              value: "Virtualisation"   
+            - name: "Containers"
+              value: "Containers"  
+            - name: "Cluster"
+              value: "Cluster"
+            - name: "BSD"
+              value: "BSD"
+            - name: "Debian"
+              value: "Debian"                                                
+            - name: "Mozilla"
+              value: "Mozilla"     
+            - name: "Archlinux"
+              value: "Archlinux"                                                                                                 
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Planet"
+              value: "planet"

@@ -1,0 +1,115 @@
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site favicons & manifest icons
+# 9. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- alembic-jekyll-theme.gemspec
+- .jekyll-cache
+- prose.yml
+
+# 2. Installed Gems
+plugins:
+- jekyll-sitemap
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-default-layout
+- jekyll-feed
+- jekyll-include-cache
+- jekyll-remote-theme
+- jemoji
+
+# 3. Gem settings
+paginate: 5 # jekyll-paginate > items per page
+paginate_path: page:num # jekyll-paginate > blog page
+author: Yax # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: Yax # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://github.com/kianby
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: /:year/:month/:day/:title:output_ext 
+excerpt_separator: "<!-- more -->" # Marks end of excerpt in posts
+timezone: Europe/Paris # Timezone for blog posts and alike
+remote_theme: daviddarnes/alembic
+
+# 5. Collections
+collections:
+  posts: 
+    title:  # Needed for Siteleaf
+    output: true
+    description: "" 
+    feature_text: |
+      ## Le blog du Yax
+      GNU, Linux, BSD et autres libertés
+    feature_image: "/assets/fond.jpg"
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/assets/logos/logo.svg" # Default image for sharing
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: fr # Set the site language
+title: "Le blog du Yax" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+description: "GNU, Linux, BSD et autres libertés" # Site description and default description, also used in jekyll-seo-tag
+url: "https://blogduyax.fr" # Site url, also used in jekyll-seo-tag
+baseurl: ""
+repo: "https://github.com/kianby/kianby.github.io"
+avatarurl: '/assets/logos/logo@32px.png'
+#email: ""
+disqus: true
+
+# 8. Site favicons & manifest icons
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  16: '/assets/logos/logo@16px.png'
+  32: '/assets/logos/logo@32px.png'
+  96: '/assets/logos/logo@96px.png'
+  120: '/assets/logos/logo@120px.png'
+  144: '/assets/logos/logo@144px.png'
+#  180: '/assets/logos/logo@180px.png'
+#  512: '/assets/logos/logo@512px.png'
+#  1024: '/assets/logos/logo@1024px.png'
+
+# 9. Site navigation
+navigation_header:
+- title: Blog
+  url: /
+- title: Catégories
+  url: /categories
+- title: Recherche
+  url: /search
+  
+navigation_footer:
+- title: Jekyll
+  url: https://jekyllrb.com
+- title: Alembic
+  url: https://alembic.darn.es
+- title: Isso
+  url: https://posativ.org/isso
+
+
+

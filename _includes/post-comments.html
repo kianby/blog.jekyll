@@ -1,0 +1,19 @@
+{% if site.disqus and page.comments != false  %}
+<section id="isso-thread"></section>
+<script data-isso="https://isso.madyanne.fr/" 
+        data-isso-css="false" 
+        data-isso-lang="fr" 
+        data-isso-reply-to-self="false"
+        data-isso-require-author="true" 
+        data-isso-require-email="false" 
+        data-isso-max-comments-top="10"
+        data-isso-max-comments-nested="5" 
+        data-isso-reveal-on-click="5" 
+        data-isso-avatar="true" 
+        data-isso-gravatar="false"
+        data-isso-vote="false" 
+        data-isso-feed="false" 
+        src="https://isso.madyanne.fr/js/embed.min.js" async>
+    </script>
+<noscript>Merci d'activer JavaScript pour voir les commentaires.</noscript>
+{% endif %}
