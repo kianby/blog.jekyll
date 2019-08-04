@@ -76,9 +76,9 @@ lang: fr # Set the site language
 title: "Le blog du Yax" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "GNU, Linux, BSD et autres libertés" # Site description and default description, also used in jekyll-seo-tag
-url: "https://blogduyax.fr" # Site url, also used in jekyll-seo-tag
+url: "https://blogduyax.madyanne.fr" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/kianby/kianby.github.io"
+repo: "https://github.com/kianby/blog"
 avatarurl: '/assets/logos/logo@32px.png'
 #email: ""
 disqus: true
