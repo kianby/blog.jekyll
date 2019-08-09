@@ -70,7 +70,7 @@ defaults:
     values:
       image: "/assets/logos/logo.svg" # Default image for sharing
 
-# 7. Site settings
+# 7. Site settings 
 encoding: utf-8 # Make sure the encoding is right
 lang: fr # Set the site language 
 title: "Le blog du Yax" # Site name or title, also used in jekyll-seo-tag
