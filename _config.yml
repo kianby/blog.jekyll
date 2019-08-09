@@ -81,7 +81,7 @@ baseurl: ""
 repo: "https://github.com/kianby/blog"
 avatarurl: '/assets/logos/logo@32px.png'
 #email: ""
-disqus: true
+disqus: true 
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
